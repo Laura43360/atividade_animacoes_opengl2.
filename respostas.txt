@@ -1,0 +1,48 @@
+Respostas da atividade
+Exercício 1 — Nova trajetória 2D
+A nave percorre uma trajetória elíptica utilizando as funções seno e cosseno. O seno calcula
+ a posição horizontal (X), enquanto o cosseno calcula a posição vertical (Y). Como as duas funções
+ utilizam o mesmo período, a nave repete sua trajetória regularmente.
+
+Exercício 2 — Tempo e FPS
+O FPS indica a quantidade de quadros exibidos por segundo. Quanto maior o FPS, maior pode ser a fluidez da animação.
+- Com GIRO = 60, uma volta completa de 360° leva aproximadamente 6 segundos.
+- Com GIRO = 120, uma volta completa leva aproximadamente 3 segundos.
+- O parâmetro dt representa o tempo decorrido entre os quadros e permite atualizar a animação com base no tempo real,
+ evitando que a velocidade dependa diretamente da quantidade de quadros.
+Observação: os FPS observados e os tempos medidos devem ser preenchidos após os testes no computador.
+
+Exercício 3 — Eixos e ordem em 3D
+Rotação no eixo X: o objeto gira em torno do eixo X, alterando a orientação das faces superiores e inferiores.
+Rotação no eixo Y: o objeto gira em torno do eixo Y, permitindo visualizar diferentes lados do objeto.
+Rotação no eixo Z: o objeto gira em torno do eixo Z, semelhante a um ponteiro girando quando visto de frente.
+Ordem das transformações: a ordem das operações influencia o resultado. Quando a translação ocorre antes da rotação,
+o objeto pode girar ao redor da origem, realizando um movimento de órbita. Alterando a ordem, o objeto pode girar em torno do próprio centro.
+
+Exercício 4 — Cena autoral
+A cena autoral representa um satélite composto por um corpo central e dois painéis solares. Foram utilizadas transformações de translação, rotação e escala para posicionar e modificar as partes do objeto.
+As funções glPushMatrix() e glPopMatrix() isolam as transformações de cada componente, evitando que as alterações de uma parte afetem as demais.
+A animação permite pausar e continuar com a tecla Espaço e reiniciar com a tecla R. Na cena 3D, a tecla P alterna entre projeção em perspectiva e ortográfica.
+
+Experimento — Câmera e objeto
+1. No modo órbita, os vértices do cubo mudaram de posição no mundo?
+Não. Os vértices do cubo permanecem fixos nas coordenadas do mundo. O que muda é a posição da
+câmera, fazendo com que diferentes faces do cubo fiquem visíveis.
+
+2. No modo lateral, explique a paralaxe observada.
+A paralaxe ocorre porque os objetos em diferentes profundidades apresentam deslocamentos 
+aparentes diferentes quando a câmera se movimenta lateralmente. Os objetos mais próximos 
+parecem se deslocar mais do que os objetos distantes.
+
+3. No modo dolly, qual é a diferença entre perspectiva e projeção ortográfica?
+Na perspectiva, aproximar a câmera faz os objetos parecerem maiores e afastá-la faz
+parecerem menores. Na projeção ortográfica, o tamanho aparente permanece praticamente
+constante durante a aproximação ou o afastamento da câmera.
+
+Registro dos FPS
+Teste	FPS exibido	Resultado
+Animação 2D	60 FPS	Animação executada
+Animação 3D	60 FPS	Objetos tridimensionais exibidos
+Animação da câmera	60 FPS	Cena 3D exibida com perspectiva
+Conclusão: nas três capturas de tela, o programa apresenta a indicação de 60 FPS, com 
+execução das cenas gráficas.
